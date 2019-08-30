@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="jumbotron">
+        <h1 class="display-4">Sala de Aula</h1>
+        <p class="lead">Seja bem vindo a nossa sala de aula virtual</p>
+        <hr class="my-4">
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="card" style="width: 18rem;">
+        <img src="http://www.megatronti.com/visual/boneco-pc-pdv.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cadastro</h5>
+          <p class="card-text">Fazer um novo cadastro do aluno.</p>
+          <a href="http://127.0.0.1:8000/aula/aluno/create/" class="btn btn-primary">cadastrar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card" style="width: 18rem;">
+        <img src="http://evidance.com.br/wp-content/uploads/2017/08/boneco-2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">listagem</h5>
+          <p class="card-text">Ver a lista de alunos cadastrados.</p>
+          <a href="http://127.0.0.1:8000/aula/aluno/list" class="btn btn-primary">Listar</a>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+
+{% endblock %}

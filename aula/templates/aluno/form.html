@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h1>Novo Aluno</h1>
+<div class="row">
+    <div class="col-lg-6">
+        <form action="/aula/aluno/create/" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="exampleInputEmail1">Nome:</label>
+                {{form.nome}}
+                {{form.nome.errors}}
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Matricula:</label>
+                {{form.matricula}}
+                {{form.matricula.errors}}
+            </div>
+    
+            <div class="form-group">
+                <label for="exampleInputEmail1">Sexo:</label>
+                {{form.sexo}}
+                {{form.sexo.errors}}
+            </div>
+            <button type="submit" class="btn btn-primary">OK</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

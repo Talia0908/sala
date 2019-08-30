@@ -1,0 +1,3 @@
+Modelo.objects.filter(nome__exact='leonardo') || é para trazer um nome expecifico
+Modelo.objects.filter(nome__icontains='leonardo') ||| é para trazer a lista de dos nome que tive leonardo
+Modelo.objects.filter(idade__g+= 10) || é para ver a idade ou qualquer numero  
